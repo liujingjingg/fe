@@ -32,6 +32,7 @@ import LogsOperation from './pages/Logs/Operation';
 import SMTP from './pages/Settings/SMTP';
 import SSO from './pages/Settings/SSO';
 import Create from './pages/Settings/SSO/create';
+import Home from './pages/Home';
 
 interface LocaleMap {
   [index: string]: any,
@@ -128,6 +129,8 @@ const App = () => {
                     <Route exact path="/settings/smtp" component={SMTP} />
                     <Route exact path="/settings/sso" component={SSO} />
                     <Route exact path="/settings/sso/create" component={Create} />
+                    <Route exact path="/home" component={Home} />
+
                     <Route path="/ticket" render={(props: any) => {
                       return (
                         <Parcel
