@@ -3,12 +3,25 @@ function getApi(path: string) {
   return `${prefix}${path}`;
 }
 
+function getMonApi(path: string) {
+  const prefix = '/api/mon';
+  return `${prefix}${path}`;
+}
+
+
+function getPlatformApi(path: string) {
+  const prefix = '/api/platform';
+  return `${prefix}${path}`;
+}
+
 function gethspApi(path: string) {
   const prefix = '/api/rdb';
   return `${prefix}${path}`;
 }
 
 const api = {
+  announcements:getPlatformApi('/mis/announcements'),
+  cur:getMonApi('/event/cur'),
   sso: gethspApi('/sso'),
   login: getApi('/auth/login'),
   logout: getApi('/auth/logout'),
