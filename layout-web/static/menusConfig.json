@@ -22,5 +22,10 @@
 		"nameEn": "MON",
 		"path": "mon",
 		"icon": "#iconjiankonggaojingxitongicon"
+	}, {
+		"name": "控制台首页",
+		"nameEn": "CONSOLE",
+		"path": "console",
+		"icon": "#iconjiankonggaojingxitongicon"
 	}]
 }]

@@ -35,6 +35,11 @@
       "path": "mon",
       "isAbsolutePath": true,
 			"icon": "#iconjiankonggaojingxitongicon"
+    }, {
+			"name": "console",
+      "path": "console",
+      "isAbsolutePath": true,
+			"icon": "#iconjiankonggaojingxitongicon"
     }]
   }]
 }
