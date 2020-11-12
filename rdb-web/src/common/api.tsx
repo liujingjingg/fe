@@ -8,6 +8,16 @@ function getMonApi(path: string) {
   return `${prefix}${path}`;
 }
 
+function getCateApi(path: string) {
+  const prefix = '/api/rdb/node';
+  return `${prefix}${path}`;
+}
+
+
+function getTicketsApi(path: string) {
+  const prefix = '/api';
+  return `${prefix}${path}`;
+}
 
 function getPlatformApi(path: string) {
   const prefix = '/api/platform';
@@ -20,9 +30,11 @@ function gethspApi(path: string) {
 }
 
 const api = {
+  tickets: getTicketsApi('/ticket/tickets'),
   announcements:getPlatformApi('/mis/announcements'),
   cur:getMonApi('/event/cur'),
   sso: gethspApi('/sso'),
+  cateCount: getCateApi('/1/resources/cate-count'),
   login: getApi('/auth/login'),
   logout: getApi('/auth/logout'),
   selftProfile: getApi('/self/profile'),
