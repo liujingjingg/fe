@@ -2,8 +2,8 @@
   {
     "ident": "rdb",
     "development": {
-      "publicPath": "http://localhost:8001/rdb/",
-      "index": "http://localhost:8001/rdb/manifest.json"
+      "publicPath": "http://172.24.28.82:8001/rdb/",
+      "index": "http://172.24.28.82:8001/rdb/manifest.json"
     },
     "production": {
       "publicPath": "/rdb/",
