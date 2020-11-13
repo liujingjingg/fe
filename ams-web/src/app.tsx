@@ -16,6 +16,7 @@ import HostsManagement from './pages/Hosts/Management';
 import HostsManagementDetail from './pages/Hosts/Management/Detail';
 import HostsSearch from './pages/Hosts/Search';
 import Nethws from './pages/Nethws';
+import ExtendList from './pages/Hosts/Extend';
 
 interface LocaleMap {
   [index: string]: any,
@@ -90,6 +91,7 @@ const App = () => {
                     <Route exact path="/hosts/management" component={HostsManagement} />
                     <Route exact path="/hosts/management/:id" component={HostsManagementDetail} />
                     <Route exact path="/hosts/search" component={HostsSearch} />
+                    <Route exact path="/hosts/extend" component={ExtendList} />
                     <Route path="/nethws" component={Nethws as any} />
                   </Switch>
                 </LayoutMain>

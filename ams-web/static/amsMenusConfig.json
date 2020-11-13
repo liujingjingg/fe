@@ -13,6 +13,9 @@
 		}, {
 			"name": "search",
 			"path": "search"
+		},{
+			"name": "extend",
+			"path": "extend"
 		}]
 	}]
 }
