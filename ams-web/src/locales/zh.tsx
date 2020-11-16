@@ -6,6 +6,7 @@ export default {
 
   'menu.ams.hosts': '主机设备',
   'menu.ams.hosts.management': '设备管理',
+  'menu.ams.hosts.extend': '扩展字段',
   'menu.ams.hosts.search': '批量检索',
   'menu.ams.hosts.extend': '主机扩展',
   'menu.ams.nethws': '网络设备',

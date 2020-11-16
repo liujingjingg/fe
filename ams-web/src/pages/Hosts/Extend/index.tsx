@@ -13,7 +13,7 @@ import _ from "lodash";
 import api from "@pkgs/api";
 import request from "@pkgs/request";
 import FetchTable from "@pkgs/FetchTable";
-import ExtendForm from "./ExtendModal";
+import FormModal from "./FormModal";
 import { fields } from "./config";
 
 const ExtendList = (props: RouteComponentProps<any>) => {
@@ -21,7 +21,7 @@ const ExtendList = (props: RouteComponentProps<any>) => {
   const { ident: cate } = props.match.params;
 
   const handleCreate = () => {
-    ExtendForm({
+    FormModal({
       type: "create",
       initialValues: {
         cate,
@@ -45,7 +45,7 @@ const ExtendList = (props: RouteComponentProps<any>) => {
   };
 
   const handleModify = (record: any) => {
-    ExtendForm({
+    FormModal({
       type: "modify",
       initialValues: record,
       onOk: (values: any, destroy: any) => {
@@ -115,6 +115,10 @@ const ExtendList = (props: RouteComponentProps<any>) => {
             {
               title: "标识",
               dataIndex: "field_name",
+            },
+            {
+              title: "分类",
+              dataIndex: "field_cate",
             },
             {
               title: "类型",
