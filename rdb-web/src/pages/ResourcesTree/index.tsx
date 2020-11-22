@@ -4,7 +4,8 @@ import { FormattedMessage } from 'react-intl';
 import { NsTreeContext } from '@pkgs/Layout/Provider';
 import Info from './Info';
 import Role from './Role';
-import Resources from './Resources'
+import Resources from './Resources';
+import Usages from './Usages';
 
 
 const { TabPane } = Tabs;
@@ -35,6 +36,9 @@ function index() {
       </TabPane>
       <TabPane tab={<FormattedMessage id="resourcesTree-tab-resource" />} key="resource">
         <Resources />
+      </TabPane>
+      <TabPane tab="配额管理" key="usages">
+        <Usages />
       </TabPane>
     </Tabs>
   )
