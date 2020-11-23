@@ -8,3 +8,19 @@ export const getDate = async (tenant: number) => {
     }
     return data;
   };
+
+  export const updateQuota = async (tenant: string, name: string, value: number) => {
+    const response =  await fetch(api.updateZstack + '/actions', {
+      method: 'PUT',
+      body: JSON.stringify({
+        identityUuid: tenant,
+        name: name,
+        value: value
+      }),
+    })
+    const data = await response.json()
+    if(response.status < 200 || response.status >= 300){
+      console.log(data.err);
+    }
+    return data;
+  };

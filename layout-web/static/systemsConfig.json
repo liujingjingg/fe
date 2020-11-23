@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+[
+  {
+    "ident": "rdb",
+    "development": {
+      "publicPath": "http://172.24.28.82:8001/rdb/",
+      "index": "http://172.24.28.82:8001/rdb/manifest.json"
+    },
+    "production": {
+      "publicPath": "/rdb/",
+      "index": "/rdb/manifest.json"
+    }
+=======
   
 [{
 	"ident": "rdb",
@@ -44,6 +57,7 @@
   "development": {
     "publicPath": "http://localhost:8005/console/",
     "index": "http://localhost:8005/console/manifest.json"
+>>>>>>> 3c9d9ba44a42204fc6cd78fe8496a9f0ceb5564d
   },
   "production": {
     "publicPath": "/console/",
