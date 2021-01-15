@@ -15,14 +15,16 @@ interface IParams {
 }
 
 export default (props: IParams) => {
-  const { list, remove, getKey, push } = useDynamicList(props?.initialValues?.[props.data.name] || ['']);
   const { name, description, required, label } = props.data;
+  const { list, remove, getKey, push } = useDynamicList(props?.initialValues?.[name] || ['123']);
   const Rows = (index: number, item: any) => (
     <Row key={`${name}[${getKey(index)}]`}>
       <Form.Item key={name} label={label === "Command" ? label : ""}>
-        {console.log("initialValues", props?.initialValues)}
+        {console.log("initialValues", props?.initialValues?.[name])}
+        {console.log("item", item)}
         {props.getFieldDecorator(`${name}[${getKey(index)}]`, {
-          initialValue: item,
+          // initialValue: props?.initialValues?.[name],
+          initialValue:item,
           rules: [
             {
               required,
